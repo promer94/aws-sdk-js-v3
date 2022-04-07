@@ -54,3 +54,5 @@ codegen/*/.settings/
 codegen/*/bin
 
 benchmark/size/raw
+
+.turbo
