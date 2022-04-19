@@ -7,6 +7,7 @@
   "scripts": {
     "bootstrap": "yarn",
     "bootstrap:ci": "yarn install --frozen-lockfile",
+    "build": "turbo run build -vvv",
     "build:all": "yarn build:crypto-dependencies && lerna run build",
     "build:clients:generic": "lerna run --scope '@aws-sdk/aws-echo-service' --include-dependencies build",
     "build:clients:since:release": "yarn build:packages && lerna run build $(lerna changed | grep -e '@aws-sdk/[client|lib]-*' | sed 's/^/ --scope /' | tr '\n' ' ')",
